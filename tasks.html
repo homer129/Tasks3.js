@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>    
+    <body>
+        
+        <script src="./alert.js"></script>
+
+        <script>
+            'use strict';
+            let admin;
+            let name;
+            name = 'Джон';
+            admin = name;
+            alert(admin);
+        </script>
+
+        <script>
+            'use strict';
+            let ourPlanetName = "Земля";
+            let currentUserName = "Джон";
+        </script>
+
+        <script>
+            'use strict';
+            let userName = prompt("Укажите Ваше имя.", "");
+            alert(userName);
+        </script>
+
+        <script>
+            'use strict';
+            let a = prompt("Первое число?", 1);
+            let b = prompt("Второе число?", 2);
+
+            alert(+a + +b);            
+        </script>
+
+        <script>
+            let result = prompt("Какое «официальное» название JavaScript?");
+            if (result == "ECMAScript") {
+                alert("Верно!");
+            } else {
+                alert("Не знаете? ECMAScript!");
+            }
+        </script>
+
+        <script>
+            let value = prompt("Введите число", '');
+            if (value > 0) {
+                alert(1);
+            } else if (value < 0) {
+                alert(-1);
+            } else {
+                alert(0);
+            }
+        </script>
+
+        <script>
+            //let result = (a + b < 4) ? "Мало" : "Много";            
+        </script>
+
+        <script>
+            let login = prompt("Введите логин.", '');
+            let message = (login == "Сотрудник") ? "Привет" :
+            (login == "Директор") ? "Здравствуйте" :
+            (login == "") ? "нет логина" :
+            "";
+            alert(message);
+        </script>
+        
+        <script>
+            if (age >= 14 && age <= 90) {
+
+            }
+        </script>
+
+        <script>
+            if (!(age >= 14 && age <= 90)) {
+
+            }
+            if (age < 14 && age > 90) {
+
+            }
+        </script>
+
+        <script>
+            let whatUser = prompt("Кто там?", '');
+            if (whatUser == "Админ") {
+                let password = prompt("Пароль?", '');
+                if (password == "Я Главный") {
+                    alert("Здравствуйте!");
+                } else if (password == '' || password == null) {
+                    alert("Отменено");
+                } else {
+                    alert("Неверный пароль");
+                }
+            } else if (whatUser == '' || whatUser == null) {
+                alert("Отменено");
+            } else {
+                alert("Я вас не знаю");
+            }
+        </script>
+
+        <script>
+            for (let i = 2; i <= 10; i++) {
+                if (i % 2 == 0) {
+                    alert(i);
+                }
+            }
+        </script>
+
+        <script>
+            let u = 0;
+            while(u < 3) {
+                alert( `number ${i}!` );
+                i++;
+            }
+        </script>
+
+        <script>
+            while(true) {
+                let input = prompt("Введите число больше 100", '');
+                if (input > 100 || input == null) break;
+            }
+        </script>
+
+        <script>
+            
+            let n = 10;
+            metka:
+            for (let i = 2; i <= n; i++) {
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) continue metka;
+                }
+                alert(i);
+            }
+        </script>
+
+        <script>
+            if (browser === 'Edge') {
+                alert( "You've got the Edge!" );
+            } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+                alert( 'Okay we support these browsers too' );
+            } else {
+                alert( 'We hope that this page looks ok!' );
+            }
+        </script>
+
+        <script>
+            const number = +prompt('Введите число между 0 и 3', '');
+            switch(number) {
+                case 0:
+                    alert('Вы ввели число 0');
+                    break;
+                case 1:    
+                    alert('Вы ввели число 1');
+                    break;
+                case 2:
+                case 3:
+                    alert('Вы ввели число 2, а может и 3');
+                    break;
+            }
+        </script>
+
+        <script>
+            function min(a, b) {
+                return (a < b) ? a : b;
+            }
+        </script>
+        
+        <script>
+            function pow(x, z) {
+                let result = x;
+                for (let i = 1; i < z; i++) {
+                    result *= x;
+                }
+                return result;
+            }
+            let x = prompt("введите х", '');
+            let z = prompt("введите z, z >= 1", ''); 
+            if (z < 1) {
+                alert(`Степень ${z} не поддерживается, попробуйте натуральное число.`);
+            } else {
+                alert(pow(x, z));
+            }            
+        </script>
+        
+        <script>
+            function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+            }          
+            ask(
+            "Вы согласны?",
+            () => alert("Вы согласились."),
+            () => alert("Вы отменили выполнение.")
+          );
+            
+        </script>
+
+    </body>
+</html>
